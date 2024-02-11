@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajat Pandit</title>
+</head>
+<body>
+  <label for="">enter the first number</label>
+  <input type="number" id="fr">
+  <br>
+  <br>
+  <label for="">enter the second number</label>
+  <input type="number" id="se">
+  <br>
+  <button onclick="fun()">+</button>
+  <button onclick="fun2()">-</button>
+  <button onclick="fun3()">*</button>
+  <button onclick="fun4()">/</button>
+
+
+
+  <div class="id" id="plus"></div>
+</body>
+<script>
+ function fun(){
+ 
+  let a=parseInt(document.getElementById('fr').value);
+  let b=parseInt(document.getElementById('se').value);
+  c=a+b;
+  console.log(c);
+  document.getElementById('plus').innerHTML=c;
+ }
+ function fun2(){
+ 
+ let a1=parseInt(document.getElementById('fr').value);
+ let a2=parseInt(document.getElementById('se').value);
+ c=a1-a2;
+ console.log(c);
+ document.getElementById('plus').innerHTML=c;
+}
+function fun3(){
+ 
+ let a1=parseInt(document.getElementById('fr').value);
+ let a2=parseInt(document.getElementById('se').value);
+ c=a1*a2;
+ console.log(c);
+ document.getElementById('plus').innerHTML=c;
+}
+function fun4(){
+ 
+ let a1=parseInt(document.getElementById('fr').value);
+ let a2=parseInt(document.getElementById('se').value);
+ c=a1/a2;
+ console.log(c);
+ document.getElementById('plus').innerHTML=c;
+}
+</script>
+</html>
